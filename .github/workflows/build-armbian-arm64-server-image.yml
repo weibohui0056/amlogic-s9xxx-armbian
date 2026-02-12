@@ -157,7 +157,7 @@ jobs:
         uses: ./
         if: ${{ steps.clean.outputs.status == 'success' && !cancelled() }}
         with:
-          build_target: rockchip
+          build_target: armbian
           armbian_path: build/output/images/*.img.gz
           armbian_board: ${{ inputs.armbian_board }}
           armbian_kernel: ${{ inputs.armbian_kernel }}
